@@ -590,3 +590,41 @@ body {
 		left:0rem;
 	}
 }
+/*=============== FOOTER ===============*/
+.footer__container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid var(--secondary-color);
+}
+.footer__icons{
+	font-size: var(--h5-font-size);
+	display: flex;
+	column-gap: 1.5rem;
+	justify-content: center;
+	margin-block: 1rem;
+	
+	
+}
+.footer__icons i{
+	padding:.2rem;
+	background-color:var(--secondary-color);
+	color:var(--white-color);
+	border-radius: .5rem;
+}
+.footer__copy{
+	font-size: var(--normal-font-size);
+	color: var(--secondary-text-color);
+	text-align: right;
+	margin-block: 1rem;
+	word-spacing: .2rem;
+}
+@media screen and (max-width: 505px){
+	.footer__container{
+		flex-direction: column;
+		padding-bottom: .8rem;
+	}
+	.footer__copy{
+		font-size: var(--small-font-size);
+	}
+}
